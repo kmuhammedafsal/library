@@ -153,9 +153,11 @@ input[type=checkbox] {
 	
 			<p>Email</p><input type="text" name="armailid" placeholder="username"class="form-control">
 			<p>Password</p><input type="password" name="arpassword" placeholder="password" class="form-control"><button class="btn btn-success" type="submit">Login</button>
-<br>           <td><a href="/adminregistration"><button class="btn btn-primary" type="submit" >Create an Account </button></a></td>
+<br>           
       
         <br><a href="/index">User Login</a>
+		<br>
+		<a href="/adminregistrations">create</a>
      
         
    
