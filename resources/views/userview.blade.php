@@ -46,7 +46,7 @@
             <form class="d-flex" method="post" action="/cussearch" >
       {{csrf_field() }}
 <input class="form-control me-2" type="search" placeholder="Search book name" aria-label="Search" name="abookname"  >
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-primary" type="submit">Search</button>
       </form>
             <div class="container">
         <div class="text-center">

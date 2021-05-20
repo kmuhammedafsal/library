@@ -55,11 +55,11 @@
       <div class="card-body">
         <tr>
        
-        <h2>Welcome To Public Library {{session('loggeduser')}}</h2>
+        <h2>Welcome To Book World {{session('loggeduser')}}</h2>
         <br>
         
         <h4 style="color:black"><p>
-         Thanks for visiting public library! We're so glad that you choose us to quench your thirst for reading. With an experience of over 25 years in the book lending space, we offer a wide range of genres and your favorite authors, all available for you, when you need them. Why wait? Register your membership with us today and let's wander into the world of words together!</p></h4>
+         Thanks for visiting Book World! We're so glad that you choose us to quench your thirst for reading. With an experience of over 25 years in the book lending space, we offer a wide range of genres and your favorite authors, all available for you, when you need them. Why wait? Register your membership with us today and let's wander into the world of words together!</p></h4>
         
         
         <br>

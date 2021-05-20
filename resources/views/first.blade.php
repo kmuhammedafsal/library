@@ -125,16 +125,19 @@ text-align:center;
 <div class="container">
 <div class="banner-text">
 <div class="text-area">
-<span>W</span>
-<span>E</span>
-<span>L</span>
-<span>C</span>
+<span>B</span>
 <span>O</span>
-<span>M</span>
-<span>E</span>
+<span>O</span>
+<span>K</span>
+<span>-</span>
+<span>W</span>
+<span>O</span>
+<span>R</span>
+<span>L</span>
+<span>D</span>
 </div>
 
-<h1>PUBLIC LIBRARY </h1>
+<h1>Light Of Knowledge </h1>
 </p>
 <p class="banner-btn">
 
