@@ -16,7 +16,7 @@ class registercontroller extends Controller
      */
     public function homeuser(){
         $registers=registermodel::all();
-        $data=['LoggedUserinfo'=>registermodel::where('id','=',session('loggeduser'))->first()];
+        $data=['LoggedUserinfo'=>registermodel::where('rname','=',session('loggeduser'))->first()];
         return view('userhome',compact('registers'),$data);
 
     }
@@ -24,7 +24,7 @@ class registercontroller extends Controller
     public function index()
     {
         $registers=registermodel::all();
-        $data=['LoggedUserinfo'=>registermodel::where('id','=',session('loggeduser'))->first()];
+        $data=['LoggedUserinfo'=>registermodel::where('rname','=',session('loggeduser'))->first()];
         return view('registerview',compact('registers'),$data);
 
 
