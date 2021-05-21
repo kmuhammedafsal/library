@@ -358,6 +358,12 @@ public function card()
         return view('aboutus');
 
     }
+    public function first()
+    {
+        return view('first');
+
+    }
+    
     
     
 }

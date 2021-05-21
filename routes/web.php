@@ -21,102 +21,132 @@ use App\Http\Controllers\membercontroller;
 
 Route::get('/registration',[registercontroller :: class,'create']);
 Route::post('/registerread',[registercontroller :: class,'store']);
-Route::get('/registerview',[registercontroller :: class,'index']);
+
 Route::post('/ulogs',[registercontroller::class,'check']);
 Route::get('/ulogout',[registercontroller :: class,'logout']);
 
 
-Route::get('/adminregistration',[adminregistercontroller :: class,'create']);
+
 Route::post('/adminregisterread',[adminregistercontroller :: class,'store']); 
 
 Route::post('/alogs',[adminregistercontroller::class,'check']);
-Route::get('/alogout',[adminregistercontroller :: class,'logout']);
 
-Route::get('/category',[categorycontroller :: class,'create']);
 Route::post('/categoryread',[categorycontroller :: class,'store']); 
-Route::get('/categorys',[categorycontroller :: class,'index']);
+
+route::post('/categoryeditprocess/{id}', [categorycontroller::class,'update']);
+route::post('/categorydeleteprocess/{id}',[categorycontroller::class,'destroy']);
+
+
+
+
+route::post('/addbookread', [addbookcontroller::class,'store']);
+
+route::get('/cancelorder/{id}/{userid}', [addbookcontroller::class,'cancelorder']);
+
+Route::get('/add_to_cart/{abookid}',[addbookcontroller::class,'addToCart']);
+Route::get('removecart/{id}',[addbookcontroller::class , 'removecart' ] );
+route::post('/bookeditprocess/{id}', [addbookcontroller::class,'update']);
+route::post('/bookdeleteprocess/{id}',[addbookcontroller::class,'destroy']);
+
+Route::group(['middleware'=>['usercheck']],function()
+{
+    
+    
+});
+
+
+
+
+Route::group(['middleware'=>['AuthCheck']],function()
+{
+    Route::get('/adminlogin',[adminregistercontroller::class,'admlogin'] );
+    Route::get('/home',[adminregistercontroller::class,'homeadmin']);
+    Route::get('/adminregistration',[adminregistercontroller :: class,'create']);
+    Route::get('/categorys',[categorycontroller :: class,'index']);
+    Route::get('/adminregistrations',[adminregistercontroller :: class,'index']);
+    Route::get('/addbooks',[addbookcontroller :: class,'index']);
+    Route::get('/registerview',[registercontroller :: class,'index']);
+    Route::get('/category',[categorycontroller :: class,'create']);
+    
+    route::get('/addbook',[addbookcontroller::class,'create']);
+    
+    route::get('/addcategory',[addbookcontroller::class,'getAllGenre']);
+    
+
+    Route::get('/userhome',[registercontroller::class,'homeuser']);
+    Route::get('/userview',[addbookcontroller::class,'indexnew']);
+  
+    Route::get('/cartlist',[addbookcontroller::class , 'cartlist' ] );
+    Route::get('/order',[addbookcontroller::class , 'ordernow' ] ); 
+    
+
+    Route::get('/myorders',[addbookcontroller::class,'myorder']);
+   
+    route::get('/card', [addbookcontroller::class,'card']);
+    Route::get('/vieworders',[addbookcontroller::class , 'vieworders' ] );   
+    route::get('/contact', [addbookcontroller::class,'contact']);
+    Route::get('/index',[registercontroller::class,'usrlogin'] );
+  
+    route::get('/aboutus', [addbookcontroller::class,'aboutus']);
+
+    route::get('/', [addbookcontroller::class,'first']);
+    
+   
+});
+
+
+
+
+
+
+
+
+
+
+
+route::get('/order/{id}/edit', [addbookcontroller::class,'orderedit']);
+
+route::post('/ordereditprocess/{id}',[addbookcontroller::class,'updateorder']);
 
 route::get('/categoryeditview/{id}', [categorycontroller::class,'edit']);
 route::get('/categorydeleteview/{id}', [categorycontroller::class,'deleteview']);
-route::post('/categoryeditprocess/{id}', [categorycontroller::class,'update']);
-route::post('/categorydeleteprocess/{id}',[categorycontroller::class,'destroy']);
+
+route::get('/addbookeditview/{id}', [addbookcontroller::class,'edit']);
+route::get('/addbookdeleteview/{id}', [addbookcontroller::class,'deleteview']);
+
+Route::get('/alogout',[adminregistercontroller :: class,'logout']);
+Route::post('/cussearch',[addbookcontroller::class,'search']);
+
+
+
+Route::post('/orderplace',[addbookcontroller::class,'orderplace']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
 Route::get('/addmember',[membercontroller :: class,'create']);
 Route::post('/addmemberread',[membercontroller :: class,'store']);
 Route::get('/addmember',[membercontroller::class,'index']);*/
+/*Route::get('/userviewdetails/{id}',[addbookcontroller::class,'indexnewnew']); */
 
 
-
-
-route::get('/addbook',[addbookcontroller::class,'create']);
-route::post('/addbookread', [addbookcontroller::class,'store']);
-route::get('/addcategory',[addbookcontroller::class,'getAllGenre']);
-Route::get('/addbooks',[addbookcontroller :: class,'index']);
-
-
-
-
-route::get('/addbookeditview/{id}', [addbookcontroller::class,'edit']);
-route::get('/addbookdeleteview/{id}', [addbookcontroller::class,'deleteview']);
-route::post('/bookeditprocess/{id}', [addbookcontroller::class,'update']);
-route::post('/bookdeleteprocess/{id}',[addbookcontroller::class,'destroy']);
-
-Route::group(['middleware'=>['usercheck']],function()
-{
-    Route::get('/index',[registercontroller::class,'usrlogin'] );
-    Route::get('/userhome',[registercontroller::class,'homeuser']);
-    Route::get('/userview',[addbookcontroller::class,'indexnew']);
-    /*Route::get('/userviewdetails/{id}',[addbookcontroller::class,'indexnewnew']); */
-   
-});
-Route::group(['middleware'=>['admincheck']],function()
-{
-    Route::get('/adminlogin',[adminregistercontroller::class,'admlogin'] );
-    Route::get('/home',[adminregistercontroller::class,'homeadmin']);
-    
-  
-    
-    route::get('/addcategory',[addbookcontroller::class,'getAllGenre']);
-    Route::get('/addbooks',[addbookcontroller :: class,'index']);
-});
-Route::get('/adminregistrations',[adminregistercontroller :: class,'index']);
-Route::get('/categorys',[categorycontroller :: class,'index']);
-
-Route::post('/cussearch',[addbookcontroller::class,'search']);
-
-Route::get('/userview',[addbookcontroller::class,'indexnew']);
-
-Route::post('/orderplace',[addbookcontroller::class,'orderplace']);
-
-
-Route::get('removecart/{id}',[addbookcontroller::class , 'removecart' ] );
-Route::get('/cartlist',[addbookcontroller::class , 'cartlist' ] );
-Route::get('/order',[addbookcontroller::class , 'ordernow' ] );
-
-Route::get('/add_to_cart/{abookid}',[addbookcontroller::class,'addToCart']);
-
-Route::get('/myorders',[addbookcontroller::class,'myorder']);
-
-route::get('/card', [addbookcontroller::class,'card']);
-Route::get('/vieworders',[addbookcontroller::class , 'vieworders' ] );
-
-route::post('/ordereditprocess/{id}',[addbookcontroller::class,'updateorder']);
-
-
-route::get('/order/{id}/edit', [addbookcontroller::class,'orderedit']);
-
-
-route::get('/cancelorder/{id}/{userid}', [addbookcontroller::class,'cancelorder']);
-
-route::get('/aboutus', [addbookcontroller::class,'aboutus']);
-
-
-
-
-
-
+/*
 Route::get('placeorder', function () {
     return view('placeorder');
   
@@ -128,7 +158,7 @@ Route::get('/', function () {
 
 });
 
-/*Route::get('index', function () {
+Route::get('index', function () {
     return view('index');
 
 });
@@ -179,4 +209,3 @@ Route::get('adminregistration', function () {
 
 
 
-route::get('/contact', [addbookcontroller::class,'contact']);
