@@ -125,12 +125,16 @@ text-align:center;
 <div class="container">
 <div class="banner-text">
 <div class="text-area">
-
-<h5>
-<span>Book</span>
-
-<span>World</span></h5>
-
+<h3><span>B</span>
+<span>O</span>
+<span>O</span>
+<span>K</span>
+<span>-</span>
+<span>W</span>
+<span>O</span>
+<span>R</span>
+<span>L</span>
+<span>D</span></h3>
 </div>
 
 <h1>Light Of Knowledge </h1>
