@@ -55,10 +55,11 @@ Route::group(['middleware'=>['usercheck']],function()
 });
 
 
-Route::get('/adminregistrations',[adminregistercontroller :: class,'index']);
+
 
 Route::group(['middleware'=>['AuthCheck']],function()
 {
+    Route::get('/adminregistrations',[adminregistercontroller :: class,'index']);
     Route::get('/adminlogin',[adminregistercontroller::class,'admlogin'] );
     Route::get('/home',[adminregistercontroller::class,'homeadmin']);
     Route::get('/adminregistration',[adminregistercontroller :: class,'create']);
