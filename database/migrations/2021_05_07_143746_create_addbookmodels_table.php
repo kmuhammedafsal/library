@@ -21,7 +21,7 @@ class CreateAddbookmodelsTable extends Migration
             $table->string('aauthor');
             $table->string('acategory');
             $table->string('apublisher');
-            $table->string('arent');
+            $table->integer('arent');
             $table->string('adate');
             $table->mediumText("pimage")->nullable();
         });
