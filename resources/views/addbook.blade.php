@@ -38,35 +38,35 @@ background-position:center center;
 </tr>
 <tr>
     <td style="color:white"><b>BOOK NAME</b></td>
-    <td><input type="text" class="form-control" name="abookname"></td>
+    <td><input type="text" class="form-control" name="abookname" required></td>
 </tr>
 <tr>
     <td style="color:white"><b>AUTHOR</b></td>
-    <td><input type="text" class="form-control" name="aauthor"></td>
+    <td><input type="text" class="form-control" name="aauthor" required></td>
 </tr>
 <tr>
 <td style="color:white"><b>CATEGORY</b></td>
 <td>
-    <select name="acategory" class="form-control">
+    <select name="acategory" class="form-control" required>
     @foreach($bgenre as $bgenre)
               <option>{{$bgenre->cname }}</option>
               @endforeach</td>
 </tr>
 <tr>
     <td style="color:white"><b>PUBLISHER NAME</b></td>
-    <td><input type="text" class="form-control" name="apublisher"></td>
+    <td><input type="text" class="form-control" name="apublisher" required></td>
 </tr>
 <tr>
     <td style="color:white"><b>DATE OF PUBLISHING</b></td>
-    <td><input type="date" class="form-control" name="adate"></td>
+    <td><input type="date" class="form-control" name="adate" required></td>
 </tr>
 <tr>
     <td style="color:white"><b>RENT AMOUNT</b></td>
-    <td><input type="text" class="form-control" name="arent"></td>
+    <td><input type="text" class="form-control" name="arent" required></td>
 </tr>
 <tr>
 <td style="color:white"><b>IMAGE</b></td>
-    <td><input type="file" name="pimage"class="form-control"></td>
+    <td><input type="file" name="pimage"class="form-control" required></td>
     
     
 </tr>

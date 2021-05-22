@@ -39,6 +39,7 @@ background-position:center center;
     <th scope="row">category</th>
     <th scope="row">Publisher</th>
     <th scope="row">date</th>
+    <th scope="row">rent amount</th>
     <th scope="row">image</th>
     </tr>
     
@@ -52,6 +53,7 @@ background-position:center center;
     <td>{{$addbook->acategory}}</td>
     <td>{{$addbook->apublisher}}</td>
     <td>{{$addbook->adate}}</td>
+    <td>{{$addbook->arent}}</td>
     <td><img width="150" height="100" src="{{ URL ::asset('assets/project_img/'.$addbook->pimage) }}"></td>
     <td><a class="btn btn-warning" href={{"/addbookeditview/".$addbook->id}}>EDIT</a></td>
     <td><a class="btn btn-danger"  href={{"/addbookdeleteview/".$addbook->id}}>DELETE</a></td>

@@ -57,11 +57,11 @@ background-position:center center;
 <br>
 <br>
     <td style="color:white"><b>CATEGORY ID</b></td>
-    <td><input type="text" class="form-control" name="cid"></td>
+    <td><input type="text" class="form-control" name="cid" required></td>
 </tr>
 <tr>
     <td style="color:white"><b>CATEGORY NAME</b></td>
-    <td><input type="text" class="form-control" name="cname"></td>
+    <td><input type="text" class="form-control" name="cname" required></td>
 </tr>
 <tr>
     <td></td>

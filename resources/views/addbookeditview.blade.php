@@ -42,7 +42,11 @@
 <td>date</td>
    <td> <input type="text" name="adate" class="form-control" value="{{$addbooks->adate}}">
    </td>
-          </tr>   
+          </tr>  
+          <tr>
+    <td>rent amount</td>
+    <td><input type="text" name="arent" class="form-control" value="{{$addbooks->arent}}"></td>
+</tr> 
 <tr>
     <td>image:</td>
     <td><input type="file" name="pimage"class="form-control" value="{{$addbooks->pimage}}"></td>
