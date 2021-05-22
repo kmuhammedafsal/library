@@ -16,7 +16,7 @@ class adminregistercontroller extends Controller
      */
     public function homeadmin(){
         $adminregistrations=adminregistermodel::all();
-        $data=['LoggedUserinfo'=>adminregistermodel::where('id','=',session('loggeduser'))->first()];
+        $data=['LoggedUserinfo'=>adminregistermodel::where('arname','=',session('loggeduser'))->first()];
         return view('home',compact('adminregistrations'),$data);
 
     }
