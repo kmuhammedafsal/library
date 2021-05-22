@@ -137,7 +137,7 @@ text-align:center;
 <span>D</span></h4>
 </div>
 
-<h3>Light Of Knowledge </h3>
+<h1>Light Of Knowledge </h1>
 </p>
 <p class="banner-btn">
 
