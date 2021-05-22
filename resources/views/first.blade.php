@@ -125,10 +125,11 @@ text-align:center;
 <div class="container">
 <div class="banner-text">
 <div class="text-area">
+
+<h5>
 <span>Book</span>
 
-<span>-</span>
-<span>World</span>
+<span>World</span></h5>
 
 </div>
 
