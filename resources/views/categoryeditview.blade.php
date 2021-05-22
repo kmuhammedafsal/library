@@ -11,14 +11,14 @@
 
 <tr>
     <td>category id</td>
-    <td><input type="text"  name="cid" class="form-control" value="{{$categorys->cid}}"></td>
+    <td><input type="text"  name="cid" class="form-control" value="{{$categorys->cid}}" required></td>
 
 </tr>
 <br>
 
 <tr>
     <td>category name</td>
-    <td><input type="text"  name="cname" class="form-control" value="{{$categorys->cname}}"></td>
+    <td><input type="text"  name="cname" class="form-control" value="{{$categorys->cname}}" required></td>
 </tr>
 
 

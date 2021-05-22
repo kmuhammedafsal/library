@@ -34,7 +34,7 @@ background-position:center center;
 <br>
 <br>
     <td style="color:white"><b>BOOK ID</b></td>
-    <td><input type="text" class="form-control" name="abookid"></td>
+    <td><input type="text" class="form-control" name="abookid" required></td>
 </tr>
 <tr>
     <td style="color:white"><b>BOOK NAME</b></td>

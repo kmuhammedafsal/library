@@ -83,7 +83,7 @@ Route::group(['middleware'=>['AuthCheck']],function()
     Route::get('/myorders',[addbookcontroller::class,'myorder']);
    
     route::get('/card', [addbookcontroller::class,'card']);
-    Route::get('/vieworders',[addbookcontroller::class , 'vieworders' ] );   
+     
     route::get('/contact', [addbookcontroller::class,'contact']);
     Route::get('/index',[registercontroller::class,'usrlogin'] );
   
@@ -96,7 +96,7 @@ Route::group(['middleware'=>['AuthCheck']],function()
 
 
 
-
+Route::get('/vieworders',[addbookcontroller::class , 'vieworders' ] );  
 
 
 
