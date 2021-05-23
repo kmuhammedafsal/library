@@ -38,6 +38,13 @@
                 </div>
             </div>
         </nav>
+        <style type="text/css">
+@media print {
+    #hide {
+        display :  none;
+    }
+}
+</style>
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
@@ -48,6 +55,7 @@
             </div>
      @endif
 <br>
+<div style="text-align:right"><button id="hide" class="btn btn-outline-warning" onclick="window.print()">Print</button></div>
  <h4><center>My orders</center></h4>
  <br>
 <div class="container">
@@ -75,7 +83,7 @@
 <br><br>
 <div  class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
 <br><br>
-<a href="/cancelorder/{{$item->abookid}}/{{$item->rname}}" button class="btn btn-primary" type="submit">Cancel</a></div>
+<a href="/cancelorder/{{$item->abookid}}/{{$item->rname}}" button class="btn btn-primary" type="submit" id="hide">Cancel</a></div>
 @endforeach
 
 
@@ -99,7 +107,7 @@
                     </div>
                     <div class="text-center">
                         <div id="success"></div>
-                        <a  href="contact">TO CONTACT</a>
+                        <a  href="contact" id="hide">TO CONTACT</a>
                     </div>
                 </form>
             </div>

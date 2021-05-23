@@ -47,7 +47,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 </style>
 <body>
 
-
+<div id="hide">
 
 <div class="navbar">
   <a class="active" href="home"><i class="fa fa-fw fa-home"></i> Home</a> 
@@ -68,4 +68,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+</div>
+
 @yield("content")
