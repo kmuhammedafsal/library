@@ -21,7 +21,7 @@ background-position:center center;
 
 <div class="row">
 
-<div class="col col-12 col-sm-11 col-md-11 col-lg-11" >
+<div class="col col-12 col-sm-4 col-md-4 col-lg-4" >
 <br>
 <br>
 <br>
@@ -29,7 +29,11 @@ background-position:center center;
 <br>
 </div>
 
-
+<form class="d-flex" method="post" action="/adsearch" >
+      {{csrf_field() }}
+<input class="form-control me-2" type="search" placeholder="Search book name" aria-label="Search" name="abookname"  >
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
 
 
 <table class="table table table-dark">

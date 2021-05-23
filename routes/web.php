@@ -117,7 +117,7 @@ route::get('/addbookdeleteview/{id}', [addbookcontroller::class,'deleteview']);
 
 Route::get('/alogout',[adminregistercontroller :: class,'logout']);
 Route::post('/cussearch',[addbookcontroller::class,'search']);
-
+Route::post('/adsearch',[addbookcontroller::class,'adsearch']);
 
 
 Route::post('/orderplace',[addbookcontroller::class,'orderplace']);

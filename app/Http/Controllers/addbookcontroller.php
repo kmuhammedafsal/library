@@ -232,6 +232,15 @@ class addbookcontroller extends Controller
         ->get();
         return view('userview',compact('addbooks'));
     }
+    public function adsearch(Request $request)
+    {
+        $adgetbookname=request('abookname');
+        $addbooks=addbookmodel::query()
+        ->where('abookname','LIKE',"%{$adgetbookname}%")
+        ->get();
+        return view('addbookview',compact('addbooks'));
+        
+    }
     public function addToCart(Request $request)
     {
 
