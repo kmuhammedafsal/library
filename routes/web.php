@@ -92,10 +92,10 @@ Route::group(['middleware'=>['AuthCheck']],function()
 
     route::get('/', [addbookcontroller::class,'first']);
     
-   
+    Route::get('/adminregistrations',[adminregistercontroller :: class,'index']);
 });
 
-Route::get('/adminregistrations',[adminregistercontroller :: class,'index']);
+
 
 Route::get('/vieworders',[addbookcontroller::class , 'vieworders' ] );  
 
