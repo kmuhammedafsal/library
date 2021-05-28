@@ -289,7 +289,7 @@ public function ordernow()
     }
     public function orderplace (Request $req)
     {
-        $getbookingdate = Carbon::now()->toDateTimeString();
+        $getbookingdate = Carbon::now()->toDateString();
         $rname= Session::get('loggeduser');
         $allCart=cartmodel::where('rname', $rname)->get();
         foreach($allCart as $cart)
