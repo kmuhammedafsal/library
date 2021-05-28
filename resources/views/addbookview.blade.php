@@ -45,6 +45,7 @@ background-position:center center;
     <th scope="row">date</th>
     <th scope="row">rent amount</th>
     <th scope="row">image</th>
+    <th></th><th></th>
     </tr>
     
 @foreach($addbooks as $addbook)

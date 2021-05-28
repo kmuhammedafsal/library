@@ -27,6 +27,7 @@ background-position:center center;
 <table class="table table table-dark">
 <tr><th scope="row">category id</th>
     <th scope="row">category name</th>
+    <th></th><th></th>
    </tr>
     
 @foreach($categorys as $category)

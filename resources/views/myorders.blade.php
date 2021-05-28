@@ -68,20 +68,27 @@
 <img width="100" height="150" src="{{ URL ::asset('assets/project_img/'.$item->pimage) }}">
 </div>
 <div  class="col col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-<p class="card-text"><small class="text-muted"><h4>{{$item->abookname}} </h4></small></p>
-<h3>{{$item->aauthor}}</h3> 
+<br>
+<p class="card-text"><small class="text"><h4>{{$item->abookname}} </h4></small></p>
+ 
 </div>
 <div  class="col col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
 <br><br>
 <h5>₹ {{$item->arent}}</h5>
+
 </div>
-<div  class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+<div  class="col col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+<br><br>
+
+<h5> {{$item->bookingdate}}</h5>
+</div>
+<div  class="col col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
 
 <br><br>
 <h5>Delivery Status : {{$item->status}}</h5>
 </div>
 <br><br>
-<div  class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+<div  class="col col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
 <br><br>
 <a href="/cancelorder/{{$item->abookid}}/{{$item->rname}}" button class="btn btn-primary" type="submit" id="hide">Cancel</a></div>
 @endforeach

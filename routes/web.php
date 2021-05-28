@@ -59,7 +59,7 @@ Route::group(['middleware'=>['usercheck']],function()
 
 Route::group(['middleware'=>['AuthCheck']],function()
 {
-    Route::get('/adminregistrations',[adminregistercontroller :: class,'index']);
+    
     Route::get('/adminlogin',[adminregistercontroller::class,'admlogin'] );
     Route::get('/home',[adminregistercontroller::class,'homeadmin']);
     Route::get('/adminregistration',[adminregistercontroller :: class,'create']);
@@ -95,7 +95,7 @@ Route::group(['middleware'=>['AuthCheck']],function()
    
 });
 
-
+Route::get('/adminregistrations',[adminregistercontroller :: class,'index']);
 
 Route::get('/vieworders',[addbookcontroller::class , 'vieworders' ] );  
 

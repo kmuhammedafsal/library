@@ -8,6 +8,7 @@ use App\Models\addbookmodel;
 use App\Models\categorymodel;
 use App\Models\cartmodel;
 use Session;
+use Carbon\Carbon;
 use App\Models\order;
 class addbookcontroller extends Controller
 {
@@ -288,6 +289,7 @@ public function ordernow()
     }
     public function orderplace (Request $req)
     {
+        $getbookingdate = Carbon::now()->toDateTimeString();
         $rname= Session::get('loggeduser');
         $allCart=cartmodel::where('rname', $rname)->get();
         foreach($allCart as $cart)
@@ -296,6 +298,7 @@ public function ordernow()
         $order->abookid=$cart['abookid'];
         $order->rname=$cart['rname']; 
         $order->address=$req->address;
+        $order->bookingdate=$getbookingdate;
         $order->status="pending";
         $order->paymentmethod=$req->payment; 
         $order->paymentstatus="pending";

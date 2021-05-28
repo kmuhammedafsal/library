@@ -20,6 +20,7 @@ class CreateOrdersTable extends Migration
             $table->string("rname");
             $table->string("address");
             $table->string("status");
+            $table->string("bookingdate");
             $table->string("paymentmethod");
             $table->string("paymentstatus");
         });

@@ -40,9 +40,10 @@ background-position:center center;
     <th >Book Id</th>
     <th >User Name</th>
     <th >Address</th>
+    <th >Booking date</th>
     <th >Status</th>
     <th >Payment Method</th>
-    <th></th> <th></th>
+    <th></th> 
     </tr>
 
 @foreach($prod as $prods)
@@ -53,8 +54,10 @@ background-position:center center;
     <td>{{$prods->abookid}}</td>
     <td>{{$prods->rname}}</td>
     <td>{{$prods->address}}</td>
+    <td>{{$prods->bookingdate}}</td>
     <td>{{$prods->status}}</td>
     <td>{{$prods->paymentmethod}}</td>
+    
     <td><a class="btn btn-warning"  href="/order/{{$prods->id}}/edit" id="hide" >UPDATE</a></td>
     
 </tr>
