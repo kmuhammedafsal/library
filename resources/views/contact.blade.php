@@ -49,7 +49,7 @@
           <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">publiclibrary@gmail.com</h2>
+                    <h2 class="section-subheading text-uppercase">publiclibrary@gmail.com</h2>
                     <h2 class="section-subheading text-uppercase">+91 8893785412</h2>
                 </div>
                 <div class="row">
