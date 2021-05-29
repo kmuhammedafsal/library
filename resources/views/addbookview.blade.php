@@ -6,7 +6,7 @@
 {
 background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(https://images.unsplash.com/photo-1569407228235-9a744831a150?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGxpYnJhcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80);
 
-height:100vh;
+height:300vh;
 -webkit-background-size:cover;
 background-size: cover;
 background-position:center center;
