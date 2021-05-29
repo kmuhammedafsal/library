@@ -15,6 +15,7 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+  
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
@@ -27,9 +28,9 @@
                     <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="aboutus">T&C</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="userview">BOOKS</a></li>
+                        
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="cartlist">CART</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="order">BOOKING</a></li>
-                       
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="myorders">MYORDERS</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/ulogout">LOGOUT</a></li>
                         <MARQUEE style="color:white"><b> welcome {{session('loggeduser')}}</b></a></MARQUEE>
@@ -37,10 +38,11 @@
                 </div>
             </div>
         </nav>
+    
         <!-- Masthead-->
-        
         <header class="masthead">
             <div class="container">
+                
             <div class="text-center">
             <h2 class="section-heading text-uppercase">mycart</h2>
             <h3 class="section-subheading text-muted">.................................</h3>
@@ -68,35 +70,131 @@
 </div>
 <br><br>
 @endforeach
-
-
 </div>
 
 </div>
 <br><br>
-<center><a href="/order" class="btn btn-primary">Order Now<center>
+<button  class="btn btn-dark" style=" width:150px;"><a  href="/order"><b>ORDER</a></button>
+
+
+</header>
+
+
+           
+            
        
-
-
-
-
-
-
-    </div>
-
-
-
-              
-            </div>
-        </header>
-         
-
-
-       
+      
         
-   
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                
+                <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                    <div class="row align-items-stretch mb-5">
+                        
+                    </div>
+                    <div class="text-center">
+                        <div id="success"></div>
+                        <a  href="contact">TO CONTACT</a>
+                    </div>
+                </form>
+            </div>
+        </section>
        
-     
+      
+        <!-- Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/02-full.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>Date: January 2021</li>
+                                        <li>Client: Explore</li>
+                                        <li>Category: Graphic Design</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>Date: January 2021</li>
+                                        <li>Client: Finish</li>
+                                        <li>Category: Identity</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/04-full.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>Date: January 2021</li>
+                                        <li>Client: Lines</li>
+                                        <li>Category: Branding</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 5-->
+       
+        <!-- Modal 6-->
        
         <!-- Bootstrap core JS-->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -110,3 +208,4 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
+
