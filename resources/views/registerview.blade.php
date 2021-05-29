@@ -32,7 +32,7 @@ background-position:center center;
 
 
 
-<table class="table table table-dark">
+<table class="table table table-dark" style="display: block;overflow-x: auto;white-space: nowrap;" >
 <tr><th scope="row">Name</th>
     <th scope="row">Phone</th>
     <th scope="row">Place</th>

@@ -34,7 +34,7 @@ background-position:center center;
  <div class="col col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8 ">
  <div style="text-align:right"><button id="hide" class="btn btn-outline-warning" onclick="window.print()">Print</button></div>
  <br>
- <table class="table  table-success table-striped">
+ <table class="table  table-success table-striped" style="display: block;overflow-x: auto;white-space: nowrap;" >
 
 <tr><th>Order Id</th>
     <th >Book Id</th>

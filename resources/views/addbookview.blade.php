@@ -36,7 +36,7 @@ background-position:center center;
       </form>
 
 
-<table class="table table table-dark">
+<table class="table table table-dark" style="display: block;overflow-x: auto;white-space: nowrap;" >
 <tr><th scope="row">book id</th>
     <th scope="row">book name</th>
     <th scope="row">author</th>

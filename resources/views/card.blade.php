@@ -83,6 +83,7 @@ body { margin:50px auto; width:600px;}
 
 <body translate="no" >
   <div class="container">
+  
 <div class="row">
 <!-- You can make it whatever width you want. I'm making it full width
 on <= small devices and 4/12 page width on >= medium devices -->
