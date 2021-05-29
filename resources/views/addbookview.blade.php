@@ -1,21 +1,6 @@
 @extends("admintheme")
 @section("content")
-<style>
-
- .bgnew
-{
-background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(https://images.unsplash.com/photo-1569407228235-9a744831a150?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGxpYnJhcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80);
-
-height:300vh;
--webkit-background-size:cover;
-background-size: cover;
-background-position:center center;
-}
-</style>
-
-
-
-<div class="bgnew">
+<section style="background-color:black;height:300vw" >
 
 <div class="container">
 
@@ -67,8 +52,7 @@ background-position:center center;
 @endforeach
 </table>
 </div>
-
+</section>
 @endsection
 
-</div>
 </div>
