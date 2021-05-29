@@ -33,7 +33,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="order">BOOKING</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="myorders">MYORDERS</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/ulogout">LOGOUT</a></li>
-                        <MARQUEE style="color:white"><b> welcome {{session('loggeduser')}}</b></a></MARQUEE>
+                        <MARQUEE style="color:red"><b> welcome {{session('loggeduser')}}</b></a></MARQUEE>
                     </ul>
                 </div>
             </div>
