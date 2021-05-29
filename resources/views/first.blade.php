@@ -125,7 +125,7 @@ text-align:center;
 <div class="container">
 <div class="banner-text">
 <div class="text-area">
-<h4><span>B</span>
+<h5><span>B</span>
 <span>O</span>
 <span>O</span>
 <span>K</span>
@@ -134,7 +134,7 @@ text-align:center;
 <span>O</span>
 <span>R</span>
 <span>L</span>
-<span>D</span></h4>
+<span>D</span></h5>
 </div>
 
 <h1>Light Of Knowledge </h1>
