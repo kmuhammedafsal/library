@@ -57,7 +57,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   <a href="/addbooks"><i class="fa fa-fw fa-envelope"></i>Bookview</a>
   <a href="/adminregistrations"><i class="fa fa-fw fa-envelope"></i>Adminregistration</a>
   <a href="/registerview"><i class="fa fa-fw fa-envelope"></i>User Register View</a> 
-  <a href="/vieworders"><i class="fa fa-fw fa-envelope"></i>BookIssues</a> 
+  <a href="/vieworders"><i class="fa fa-fw fa-envelope"></i>Book-Issues</a> 
  
   
   
