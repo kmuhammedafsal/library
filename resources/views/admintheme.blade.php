@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Book World</title>
 </head>
 <body>
 <style>
@@ -57,7 +57,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   <a href="/addbooks"><i class="fa fa-fw fa-envelope"></i>Bookview</a>
   <a href="/adminregistrations"><i class="fa fa-fw fa-envelope"></i>Adminregistration</a>
   <a href="/registerview"><i class="fa fa-fw fa-envelope"></i>User Register View</a> 
-  <a href="/vieworders"><i class="fa fa-fw fa-envelope"></i>View Orders</a> 
+  <a href="/vieworders"><i class="fa fa-fw fa-envelope"></i>BookIssues</a> 
  
   
   
